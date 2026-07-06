@@ -76,64 +76,51 @@
         </div>
     </div>
 
-
-    <div class="w-full md:w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col">
+    <div class="w-full md:w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col group transition-all duration-500 hover:shadow-xl hover:border-blue-300">
         
         <div class="p-8">
             <div class="flex justify-center mb-4">
-                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
-                    👥
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 transition-transform duration-500 hover:rotate-12 cursor-pointer">
+                    💬
                 </div>
             </div>
-            <h2 class="text-2xl font-bold text-center mb-1">Create Account</h2>
-            <p class="text-xs text-gray-500 text-center mb-6">Enter your details to join the platform</p>
+            <h2 class="text-2xl font-bold text-center mb-1 text-gray-800">İletişimde Kalalım</h2>
+            <p class="text-xs text-gray-500 text-center mb-6">Projelerim hakkında görüşmek için bana ulaşın</p>
 
-        <form action="https://formspree.io/f/xvzjlevj" method="POST" class="space-y-4">
-    <div>
-        <label class="block text-xs font-medium text-gray-700 mb-1">Name</label>
-        <input name="ad_soyad" type="text" placeholder="👤 John Doe" required class="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-    </div>
-    <div>
-        <label class="block text-xs font-medium text-gray-700 mb-1">Email</label>
-        <input name="eposta" type="email" placeholder="✉️ example@domain.com" required class="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-    </div>
-    <div>
-        <label class="block text-xs font-medium text-gray-700 mb-1">Password</label>
-        <input name="sifre" type="password" placeholder="🔒 ••••••••" required class="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-    </div>
+            <form action="BURAYA_YENIDEN_FORMSPREE_LINKINI_YAPISTIR" method="POST" class="space-y-4">
+                <div class="group/input">
+                    <label class="block text-xs font-medium text-gray-700 mb-1 transition-colors group-focus-within/input:text-blue-600">Ad Soyad</label>
+                    <input name="ad_soyad" type="text" placeholder="👤 Adınız" required class="w-full border border-gray-300 rounded-md p-2 text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400">
+                </div>
+                <div class="group/input">
+                    <label class="block text-xs font-medium text-gray-700 mb-1 transition-colors group-focus-within/input:text-blue-600">E-posta</label>
+                    <input name="eposta" type="email" placeholder="✉️ eposta@adresiniz.com" required class="w-full border border-gray-300 rounded-md p-2 text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400">
+                </div>
+                <div class="group/input">
+                    <label class="block text-xs font-medium text-gray-700 mb-1 transition-colors group-focus-within/input:text-blue-600">Mesajınız (Opsiyonel)</label>
+                    <input name="mesaj" type="text" placeholder="📝 Konu..." class="w-full border border-gray-300 rounded-md p-2 text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400">
+                </div>
 
-    <div class="flex items-start gap-2 mt-2">
-        <input type="checkbox" required class="mt-1">
-        <p class="text-xs text-gray-500">I have read and agree to the <a href="#" class="text-blue-600">Terms of Service</a> and <a href="#" class="text-blue-600">Privacy Policy</a>.</p>
-    </div>
-
-    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md font-medium text-sm mt-4 hover:bg-blue-700 transition">Kayıt Ol →</button>
-</form>
-
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md font-medium text-sm mt-4 transition-all duration-300 hover:bg-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/40 active:scale-95">Gönder →</button>
+            </form>
 
             <div class="flex items-center gap-3 my-6">
-                <div class="h-px bg-gray-200 flex-1"></div>
-                <span class="text-xs text-gray-400">OR</span>
-                <div class="h-px bg-gray-200 flex-1"></div>
+                <div class="h-px bg-gray-200 flex-1 transition-all duration-500 group-hover:bg-blue-200"></div>
+                <span class="text-xs text-gray-400">VEYA</span>
+                <div class="h-px bg-gray-200 flex-1 transition-all duration-500 group-hover:bg-blue-200"></div>
             </div>
 
-            <button class="w-full border border-gray-300 bg-white text-gray-700 py-2 rounded-md font-medium text-sm flex items-center justify-center gap-2 hover:bg-gray-50 transition">
-                <span class="text-red-500 font-bold">G</span> Continue with Google
+            <button class="w-full border border-gray-300 bg-white text-gray-700 py-2 rounded-md font-medium text-sm flex items-center justify-center gap-2 transition-all duration-300 hover:bg-gray-50 hover:-translate-y-1 hover:shadow-md">
+                <span class="text-blue-600 font-bold text-lg">in</span> LinkedIn ile Bağlan
             </button>
 
-            <p class="text-xs text-center text-gray-500 mt-6">Already have an account? <a href="#" class="text-blue-600 font-medium">Log in</a></p>
         </div>
 
-        <div class="bg-gray-50 p-6 border-t border-gray-200 text-center">
-            <div class="font-bold text-sm text-gray-400 mb-3 flex items-center justify-center gap-1">
-                <span>❖</span> GENERIC
+        <div class="bg-gray-50 p-6 border-t border-gray-200 text-center rounded-b-xl">
+            <div class="font-bold text-sm text-gray-400 mb-3 flex items-center justify-center gap-1 transition-colors hover:text-blue-500 cursor-pointer">
+                <span>⚡</span> YZ MÜHENDİSLİĞİ
             </div>
-            <div class="flex justify-center gap-4 text-[11px] text-gray-400 mb-2">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
-            </div>
-            <p class="text-[10px] text-gray-400">© 2024 Generic Inc. All rights reserved.</p>
+            <p class="text-[10px] text-gray-400">© 2026 Tüm hakları saklıdır.</p>
         </div>
 
     </div>
