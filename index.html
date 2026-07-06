@@ -6,29 +6,29 @@
     <title>Cloud Workspace - Development Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex flex-col md:flex-row gap-12 justify-center items-center min-h-screen p-6 md:p-12">
+<body class="bg-gray-50 flex flex-col md:flex-row gap-12 justify-center items-center min-h-screen p-6 md:p-12">
 
-    <div class="w-full md:w-[500px] flex flex-col space-y-6">
+    <div class="w-full md:w-[500px] flex flex-col space-y-8">
         <div>
             <span class="bg-blue-100 text-blue-600 text-xs font-bold px-2.5 py-1 rounded-full tracking-wider">CLOUD WORKSPACE</span>
             <h1 class="text-4xl font-extrabold leading-tight mt-3 text-gray-900">Compile, Run & Deploy Instantly</h1>
-            <p class="text-base text-gray-600 mt-2">A powerful cloud-based development platform designed for modern developers. No setup, no configuration—just pure coding.</p>
+            <p class="text-base text-gray-600 mt-4 leading-relaxed">
+                Cloud Workspace, modern yazılımcılar için geliştirilmiş uçtan uca bir bulut geliştirme ortamıdır. Yerel kurulumlarla vakit kaybetmeyin; tarayıcınız üzerinden projenizi başlatın, derleyin ve canlıya alın.
+            </p>
         </div>
 
-        <div class="space-y-4">
-            <div class="flex gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
-                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-500 shrink-0 text-lg">💻</div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-sm">Multi-Language Support</h3>
-                    <p class="text-xs text-gray-500 mt-0.5">Run Python, Java, C++, and Web projects in isolated environments seamlessly.</p>
-                </div>
+        <div class="grid grid-cols-1 gap-4">
+            <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
+                <h3 class="font-bold text-gray-800 text-sm mb-1">🌍 Global Altyapı</h3>
+                <p class="text-xs text-gray-500">Düşük gecikmeli sunucularımız sayesinde dünyanın her yerinden kodunuza erişin.</p>
             </div>
-            <div class="flex gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
-                <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center text-green-500 shrink-0 text-lg">🚀</div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-sm">Zero Configuration Setup</h3>
-                    <p class="text-xs text-gray-500 mt-0.5">Skip local installation. Get your environment ready in less than 5 seconds.</p>
-                </div>
+            <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
+                <h3 class="font-bold text-gray-800 text-sm mb-1">🔒 Güvenli Ortam</h3>
+                <p class="text-xs text-gray-500">Tüm projeleriniz izole edilmiş konteynerlerde saklanır, verileriniz her zaman güvendedir.</p>
+            </div>
+            <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
+                <h3 class="font-bold text-gray-800 text-sm mb-1">🤝 Takım Çalışması</h3>
+                <p class="text-xs text-gray-500">Ekip arkadaşlarınızı davet edin ve eş zamanlı kod geliştirmenin tadını çıkarın.</p>
             </div>
         </div>
     </div>
@@ -36,20 +36,18 @@
     <div class="w-full md:w-[400px] bg-white border border-gray-200 rounded-2xl shadow-xl p-8 flex flex-col">
         <h2 class="text-2xl font-extrabold text-center text-gray-900">Get Started Now</h2>
         
-        <form action="BURAYA_FORMSPREE_LINKINI_YAPISTIR" method="POST" class="space-y-4 mt-6">
-            <div>
-                <label class="block text-xs font-semibold text-gray-600 mb-1">Full Name</label>
-                <input name="name" type="text" placeholder="John Doe" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-gray-600 mb-1">Email Address</label>
-                <input name="email" type="email" placeholder="you@example.com" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-gray-600 mb-1">Password</label>
-                <input name="password" type="password" placeholder="••••••••" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2.5 rounded-lg font-bold text-sm mt-4">Create Free Account →</button>
+        <div class="space-y-2 mt-6">
+            <button class="w-full border border-gray-300 py-2 rounded-lg text-sm font-medium hover:bg-gray-50">Google ile Kayıt Ol</button>
+            <button class="w-full border border-gray-300 py-2 rounded-lg text-sm font-medium hover:bg-gray-50">GitHub ile Kayıt Ol</button>
+        </div>
+
+        <div class="text-center text-[10px] text-gray-400 my-4 font-bold uppercase tracking-widest">veya e-posta ile</div>
+
+        <form action="BURAYA_FORMSPREE_LINKINI_YAPISTIR" method="POST" class="space-y-4">
+            <input name="name" type="text" placeholder="Full Name" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
+            <input name="email" type="email" placeholder="Email Address" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
+            <input name="password" type="password" placeholder="Password" required class="w-full border border-gray-300 rounded-lg p-2.5 text-sm">
+            <button type="submit" class="w-full bg-blue-600 text-white py-2.5 rounded-lg font-bold text-sm">Create Free Account →</button>
         </form>
 
         <div class="mt-6 text-center border-t border-gray-100 pt-4">
