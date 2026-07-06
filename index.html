@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Workspace - Development Platform</title>
+     <style>
+        .code-bg {
+            background-image: radial-gradient(circle at 2px 2px, #e5e7eb 1px, transparent 0);
+            background-size: 40px 40px;
+            animation: moveBg 20s linear infinite;
+        }
+        @keyframes moveBg {
+            from { background-position: 0 0; }
+            to { background-position: 40px 40px; }
+        }
+    </style>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 flex flex-col md:flex-row gap-12 justify-center items-center min-h-screen p-6 md:p-12">
+<body class="code-bg bg-gray-50 flex flex-col md:flex-row gap-12 justify-center items-center min-h-screen p-6 md:p-12">
+
 
     <div class="w-full md:w-[500px] flex flex-col space-y-8">
         <div>
